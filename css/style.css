@@ -1,0 +1,56 @@
+/* General */
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	margin: 0 auto;
+}
+figure {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover {
+	color: #ffcd05;
+	transition: 0.4s;
+}
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+/* Navigation */
+.navbar {
+	background-color: #C12127;
+	color: rgba(255, 255, 255, 0.8);
+	height: 60px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px; /* mine */
+}
+.navbar a {
+	color: rgba(255, 255, 255, 0.8);
+}
+.topLinks {
+	display: inline-block;
+	float: right;
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+.topLinks li {
+	display: inline-block;
+	margin: 0 10px;
+}
+/* Header section */
+header {
+	background-color: rgb(40, 19, 135);
+}
+.searchRow {
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+	width: inherit;
+}
