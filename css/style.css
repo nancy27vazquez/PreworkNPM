@@ -18,7 +18,7 @@ a:hover {
 .container {
 	width: 980px;
 	margin: 0 auto;
-	padding: 4	rem 0;
+	padding: 3rem 0 5rem 0;
 	align-items: center;
 	display: flex;
 }
@@ -127,12 +127,11 @@ header {
 }
 .splitContent {
 	display: flex;
-	background-image: url('images/city-scape.svg');
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: cover;
 }
 .cityScape {
+	display: inherit;
 	width: 50%;
-	border: 2px solid red;
+}
+.cityScape img {
+	width: 100%;
 }
