@@ -2,7 +2,6 @@
 body {
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
-	font-weight: lighter;
 	margin: 0 auto;
 }
 figure {
@@ -17,8 +16,29 @@ a:hover {
 	transition: 0.4s;
 }
 .container {
-	width: 900px;
+	width: 980px;
 	margin: 0 auto;
+	padding: 4	rem 0;
+	align-items: center;
+	display: flex;
+}
+.white {
+	color: #ffffff;
+}
+button {
+	border-radius: 30px;
+	padding: 10px 24px;
+	color: #ffffff;
+	background-color: rgb(240, 146, 51);
+	border: none;
+}
+/* Headings */
+h1, h2, h3, h4, h5 {
+	color: #ffffff;
+}
+h1 {
+  font-weight: normal;
+  font-size: 2.5em;
 }
 /* Navigation */
 .navbar {
@@ -29,10 +49,14 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px; /* mine */
+	padding: 0 50px;
 }
 .navbar a {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 0.6);
+}
+.navbar a:hover {
+	color: rgba(255, 255, 255, 1);
+	transform: 0.2s;
 }
 .topLinks {
 	display: inline-block;
@@ -46,11 +70,69 @@ a:hover {
 }
 /* Header section */
 header {
-	background-color: rgb(40, 19, 135);
+	background-color: rgb(32, 89, 122);
 }
 .searchRow {
 	display: flex;
 	color: #fff;
 	justify-content: space-between;
 	width: inherit;
+	align-items: center;
+	padding: 10px 50px;
+}
+.logo {
+	width: 8%;
+}
+.logo img {
+	width: 100%;
+	float: left;
+	padding: 5px;
+}
+.searchBar {
+	width: 78%;
+	display: inherit;
+	flex-wrap: inherit;
+	align-items: center;
+	padding: 0 1%;
+}
+.searchBar form {
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+	display: inherit;
+	flex: inherit;
+}
+.searchBar button {
+	background-color: rgb(31, 82, 111);
+	border: 1px solid rgba(255,255,255,0.2);
+	padding: 8px 10px;
+	color: rgba(255,255,255,1);
+	border-radius: 0;
+}
+.searchBar input {
+	width: 95%;
+	background-color: rgb(31, 82, 111);
+	border: 1px solid rgba(255,255,255,0.2);
+	padding: 8px 15px;
+}
+.login {
+	width: 14%;
+	justify-content: flex-end;
+	display: inherit;
+	flex-wrap: inherit;
+	align-items: center;
+}
+.headerContent {
+	width: 50%;
+}
+.splitContent {
+	display: flex;
+	background-image: url('images/city-scape.svg');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: cover;
+}
+.cityScape {
+	width: 50%;
+	border: 2px solid red;
 }
