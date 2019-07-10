@@ -16,11 +16,12 @@ a:hover {
 	transition: 0.4s;
 }
 .container {
-	width: 980px;
+	max-width: 950px;
 	margin: 0 auto;
 	padding: 3rem 0 5rem 0;
 	align-items: center;
 	display: flex;
+	flex-wrap: wrap;
 }
 .white {
 	color: #ffffff;
@@ -31,14 +32,34 @@ button {
 	color: #ffffff;
 	background-color: rgb(240, 146, 51);
 	border: none;
+	font-size: 0.9em;
+}
+button:hover {
+	box-shadow: 0px 2px 11px 4px rgba(0, 0, 0, 0.2);
+}
+ul {
+	padding-left: 20px;
+}
+
+li {
+	margin-bottom: 1em;
+	color: #ffffff;
+	font-weight: lighter;
+}
+.m-top-sm {
+	margin-top: 20px;
 }
 /* Headings */
 h1, h2, h3, h4, h5 {
 	color: #ffffff;
 }
 h1 {
-  font-weight: normal;
-  font-size: 2.5em;
+  	font-weight: normal;
+  	font-size: 2.5em;
+}
+h2 {
+	font-weight: lighter;
+	font-size: 2em;
 }
 /* Navigation */
 .navbar {
@@ -81,7 +102,7 @@ header {
 	padding: 10px 50px;
 }
 .logo {
-	width: 8%;
+	width: 10%;
 }
 .logo img {
 	width: 100%;
@@ -89,7 +110,7 @@ header {
 	padding: 5px;
 }
 .searchBar {
-	width: 78%;
+	width: 75%;
 	display: inherit;
 	flex-wrap: inherit;
 	align-items: center;
@@ -108,6 +129,7 @@ header {
 	padding: 8px 10px;
 	color: rgba(255,255,255,1);
 	border-radius: 0;
+	font-size: 0.9em;
 }
 .searchBar input {
 	width: 95%;
@@ -116,8 +138,7 @@ header {
 	padding: 8px 15px;
 }
 .login {
-	width: 14%;
-	justify-content: flex-end;
+	width: 15%;
 	display: inherit;
 	flex-wrap: inherit;
 	align-items: center;
@@ -134,4 +155,77 @@ header {
 }
 .cityScape img {
 	width: 100%;
+}
+
+/* ORG'S section */
+
+.orgs {
+	background-color: rgb(39, 53, 71);
+}
+.orgs figure {
+	padding: 3em 0;
+}
+.orgsContent {
+	position: absolute;
+    right: 0;
+    width: 50%;
+}
+.orgsContent h2 {
+	width: 70%;
+}
+.learnMore{
+	color: #ffffff;
+	font-size: 0.7em;
+}
+.learnMore a {
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.orgs button {
+	background-color: rgb(203, 56, 55);
+	font-size: 0.9em;
+}
+
+/* What Is npm section */
+
+.whatIsNpm {
+	background-size: cover;
+	background-image: url("images/forklift.svg");
+	position: relative;
+}
+.whatIsNpmContent {
+	width: 50%;
+}
+.whatIsNpm button {
+	background-color: rgb(49, 68, 88);
+}
+
+/* What Can You Make */
+
+.heading {
+	text-align: center;
+    margin: 2em 10%;
+}
+.heading h2 {
+	color: rgb(83, 88, 98);
+}
+.heading p {
+	color: rgb(135, 145, 156);
+}
+.whatCanYoumMakeContent {
+	justify-content: space-around;
+	display: flex;
+	color: rgb(135, 145, 156);
+}
+.qualities {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	padding: 0 30px;
+}
+.qualities a {
+	color: rgb(208, 74, 73);
+}
+.qualities h3 {
+	color: rgb(83, 88, 98);
 }
